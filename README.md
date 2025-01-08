@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/0af0645c-1021-45ee-9a6e-8fb0a8207f91)
+
 # Twitter API CLI Interface
 
 A command-line interface for Twitter API v2 operations using OAuth1 authentication.
