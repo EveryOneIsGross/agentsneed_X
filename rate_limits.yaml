@@ -1,0 +1,380 @@
+free_tier_rate_limits:
+  tweets:
+    delete_tweet:
+      rate: 17
+      period: 24 hours
+      scope: PER USER
+      additional_app_limit:
+        rate: 17
+        period: 24 hours
+        scope: PER APP
+    delete_like:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    delete_retweet:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    get_tweets:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_tweet_by_id:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_liking_users:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_quote_tweets:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_retweeted_by:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_tweet_counts_recent:
+      rate: 1
+      period: 15 mins
+      scope: PER APP
+      attributes:
+        query_length: 512
+        operators: core
+    get_tweet_search_recent:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+      attributes:
+        default_results_per_response: 10
+        max_results_per_response: 100
+        query_length: 512
+        operators: core
+    get_liked_tweets:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_mentions:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_timeline:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    get_user_tweets:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_reposts:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      attributes:
+        results_per_response: 100
+    post_tweet:
+      rate: 17
+      period: 24 hours
+      scope: PER USER
+      additional_app_limit:
+        rate: 17
+        period: 24 hours
+        scope: PER APP
+    post_like:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    post_retweet:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    put_tweet_hidden:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+
+  users:
+    delete_following:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    delete_muting:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    get_users:
+      rate: 1
+      period: 24 hours
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 24 hours
+        scope: PER APP
+    get_user_by_id:
+      rate: 1
+      period: 24 hours
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 24 hours
+        scope: PER APP
+    get_blocking:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    get_muting:
+      rate: 1
+      period: 24 hours
+      scope: PER USER
+    get_users_by:
+      rate: 1
+      period: 24 hours
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 24 hours
+        scope: PER APP
+    get_user_by_username:
+      rate: 3
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 3
+        period: 15 mins
+        scope: PER APP
+    get_me:
+      rate: 25
+      period: 24 hours
+      scope: PER USER
+    post_following:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    post_muting:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+
+  spaces:
+    get_spaces:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_space_by_id:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_space_buyers:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_space_tweets:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_spaces_by_creator:
+      rate: 1
+      period: second
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_spaces_search:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+
+  lists:
+    delete_list:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    delete_list_member:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    delete_followed_list:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    delete_pinned_list:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    get_list:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_list_members:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_list_tweets:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_user_list_memberships:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_owned_lists:
+      rate: 1
+      period: 24 hours
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 24 hours
+        scope: PER APP
+    get_pinned_lists:
+      rate: 1
+      period: 24 hours
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 24 hours
+        scope: PER APP
+    post_list:
+      rate: 1
+      period: 24 hours
+      scope: PER USER
+    post_list_member:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    post_followed_list:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    post_pinned_list:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    put_list:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+
+  bookmarks:
+    delete_bookmark:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    get_bookmarks:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+    get_bookmark_folders:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    get_bookmark_folder_by_id:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+      additional_app_limit:
+        rate: 1
+        period: 15 mins
+        scope: PER APP
+    post_bookmark:
+      rate: 1
+      period: 15 mins
+      scope: PER USER
+
+  compliance:
+    get_jobs:
+      rate: 1
+      period: 15 mins
+      scope: PER APP
+    get_job_by_id:
+      rate: 1
+      period: 15 mins
+      scope: PER APP
+    post_job:
+      rate: 1
+      period: 15 mins
+      scope: PER APP
+
+  usage:
+    get_tweet_usage:
+      rate: 1
+      period: 15 mins
+      scope: PER APP
