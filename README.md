@@ -65,6 +65,7 @@ CLI Commands
 
 ---
 
+![image](https://github.com/user-attachments/assets/51cc9863-a650-4bce-afbd-7a3fefc6e2d6)
 
 # Autonomous X Agent Architecture
 
