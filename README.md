@@ -57,11 +57,10 @@ CLI Commands
     └── unlike
 ```
 
-## Core Improvements
+## TODO
 1. Add pagination support
 2. Implement async operations
 3. Add batch operation capability
-4. Enhance error recovery
 
 ---
 
